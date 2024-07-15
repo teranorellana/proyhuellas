@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}  
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0; /* Asegura que el nav esté completamente a la izquierda */
+    right: 0; /* Asegura que el nav esté completamente a la derecha */
+    background-color: rgba(200, 200, 200, 0.5); 
+    
+    
+  }
+  
+i{
+color: white;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+.texto h1{
+    position: fixed;
+    bottom: 80px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+    right: 80px; /* Ajusta la distancia desde la derecha según sea necesario */
+    text-align: right; /* Alinea el texto a la derecha */
+    color: white;
+    font-family: 'Cooper Black';
+    font-size: 48px; /* Tamaño del texto grande */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+
+  }
+  .container .menu{
+          display: flex; /* Usa flexbox para alinear los elementos */
+          align-items: center; /* Alinea los elementos verticalmente al centro */
+          justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+          padding-top: 20px;
+          padding-left: 5%;
+          padding-right: 5%;
+          font-weight: bold;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background-color:hsla(28, 42%, 26%, 0.781); 
+           z-index: 1;
+      }
+.container .menu a{
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover{
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+
+  .container-menu {
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      width: 200px; 
+      background-color: transparent; 
+      padding: 10px;
+      border-radius: 5px;
+      display: none; 
+  }
+  
+  .container-menu {
+      display: block; 
+  }
+  
+  .container-menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 5px;
+  }
+  
+  .container-menu a:hover {
+      background-color: transparent; 
+  }
+ 
+  *{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.icono-menu{
+  margin: 40px 0 0 50px; 
+  position:fixed; 
+  top: -1em;
+  left: 0;
+  bottom: 1em;
+  z-index: 2;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 40px;
+  cursor: pointer;
+}
+.logo-blanco{
+  margin: 10px 0 0 50px; 
+  position:fixed; 
+  top: 65px;
+  right: 1223px;
+  bottom: 1em;
+ 
+}
+
+.logo-blanco img {
+  vertical-align: top;
+  width: 125px;
+  cursor: pointer;
+}
+
+.cont-menu{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+.active{
+    transform: translate(-600px);
+}
+.opacity{
+    background-color: rgb(0,0,0,0.5);
+    transition: all .5s ease;
+}
+.cont-menu ul{
+    padding: 120px 0 20px 0;
+    list-style: none;
+}
+.cont-menu ul li{
+    color: white;
+    display:block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+.cont-menu ul li:hover{
+    background-color: rgb(228, 228, 228);
+    color:rgb(42, 42, 42);
+}

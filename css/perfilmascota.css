@@ -1,0 +1,91 @@
+body{
+    background: white;
+}
+
+.presentación{
+    height: 420px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.presentación .img{
+    width: 50%;
+}
+
+.presentación .img img{
+    width: 140%;
+    vertical-align: top;
+}
+.mascota-info{
+    width: 50%;
+    border-radius: 0 7px 10px 7px;
+    background: white;
+}
+.mascota-texto{
+    width: 100%;
+}
+.mascota-texto h1{
+    margin-left: 38px;
+    padding-top: 8px;
+    font-size: 34px;
+    height: 40px;
+    width: 176px;
+    border-radius: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    background: #DBB471;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mascota-texto h1 .adopte-btn{
+    font-family: 'Times New Roman', Times, serif;
+}
+.mascota-texto h2{
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: .2em;
+}
+
+.mascota-texto p{
+    height: 125px;
+    margin-left: 38px;
+    font-family: serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+}
+
+.adopte-btn{
+    height: 103px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+.adopte-btn a{
+    height: 50px;
+    width: 176px;
+    border-radius: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    background: #DBB471;
+    cursor: pointer;
+    text-decoration: none;
+}
+.adopte-btn a:hover{
+background: #603813;
+}

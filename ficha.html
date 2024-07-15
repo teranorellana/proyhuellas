@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha</title>
+    <link rel="stylesheet" href="css/ficha.css">
+    <style>
+        body {
+            background-image: url('img/otrofondo.jpg'); /* Ruta de la imagen */
+            background-size: cover; /* Para cubrir todo el fondo */
+            background-position: center; /* Para centrar la imagen */
+            background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+            /* Otros estilos opcionales para el cuerpo de la página */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ficha.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Ficha</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="Nombre"
+                required>
+                <i class='bx bxs-user' ></i>
+
+            </div>
+            <div class="inputbox">
+                <input type="text" placeholder="Ubicación"
+                required>
+                <i class='bx bxs-location-plus' ></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="number" placeholder="DUI"
+                required>
+                <i class='bx bxl-baidu'></i>
+            </div>
+ 
+            <div class="inputbox">
+                <input type="number" placeholder="Contacto"
+                required>
+                <i class='bx bxs-phone'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Profesión u oficio"
+                required>
+                <i class='bx bxs-briefcase' ></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Lugar de trabajo"
+                required>
+                <i class='bx bxs-location-plus' ></i>
+            </div> 
+
+            <button type="submit" class="boton">Siguiente</button>
+            
+         
+        </form>
+    </div>
+</body>

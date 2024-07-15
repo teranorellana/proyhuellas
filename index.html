@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas-Empolvadas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-image: url('img/otrofondo.jpg'); /* Ruta de la imagen */
+            background-size: cover; /* Para cubrir todo el fondo */
+            background-position: center; /* Para centrar la imagen */
+            background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+            /* Otros estilos opcionales para el cuerpo de la página */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="logo-blanco">
+        <img src="img/logoblanco.png" id="logo-blanco">
+    </div>
+    
+<header>
+       
+<div class="texto">
+    <h1>HUELLITAS <br>
+    EMPOLVADAS</h1>
+</div>
+
+
+<header class="header">
+    <div class="container">
+        
+            <nav class="container-menu">    
+                    
+        <nav class="menu">
+           
+            <a href="/"><i class='bx bxs-home-heart'></i>Inicio</a>
+            <a href="info.html"><i class='bx bxs-pencil' ></i>Información</a>
+            <a href="ver-mascotas.html"><i class='bx bxs-cat' ></i>Mascotas</a> 
+            <a href="ir-a-tienda.html"><i class='bx bxs-store' ></i>Tienda</a>
+            <a href="contacto.html"><i class='bx bxs-phone' ></i>Contacto</a>
+            
+        </nav>
+        
+    </div>
+    <div class="icono-menu">
+        <img src="img/icon-menu.png" id="icono-menu">
+        </div>
+        
+        <div class="cont-menu active" id="menuu">
+            <ul>
+                <li><a href="perfiluser.html">Mi perfil</a></li>
+                <li><a href="aaaa.html">cerrar sesión</a></li>
+            </ul>
+        </div>
+        
+        <script src="js/inicio.js"></script>
+   
+</header>
+<div class="capa"></div>
+
+</body>
+</html>

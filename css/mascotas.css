@@ -1,0 +1,198 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header {
+    width: 100%;
+    height: 600px;
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(22, 16%, 64%, 0.664), hsla(29, 67%, 23%, 0.664)),
+                url("../img/otrofondo.jpg"); /* Ajusta la ruta de la imagen */
+    background: linear-gradient(to right, hsla(22, 16%, 64%, 0.664), hsla(29, 67%, 23%, 0.664)),
+                url("../img/otrofondo.jpg"); /* Ajusta la ruta de la imagen */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    bottom: 17em;
+}
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 260px;
+    }
+    
+    .btn-neon {
+        display: inline-block;
+        padding: 15px 30px;
+        color: #fff;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 24px;
+        overflow: hidden;
+        transition: 0.2s;
+        margin: 0 10px; /* Ajusta el margen entre botones según sea necesario */
+        position: relative;
+        top: 22em;
+    }
+    
+    .btn-neon:hover {
+        background: #603813;
+        box-shadow: 0 0 10px #603813, 0 0 40px #603813, 0 0 80px #603813;
+        transition-delay: 1s;
+    }
+    
+    .btn-neon span {
+        position: absolute;
+        display: block;
+    }
+    
+    #span1 {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #603813);
+    }
+    
+    .btn-neon:hover #span1 {
+        left: 100%;
+        transition: 1s;
+    }
+    
+    #span3 {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #603813);
+    }
+    
+    .btn-neon:hover #span3 {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    
+    #span2 {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #603813);
+    }
+    
+    .btn-neon:hover #span2 {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+    
+    #span4 {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #603813);
+    }
+    
+    .btn-neon:hover #span4 {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+    }
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+    
+}
+
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
+}
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:30px;
+    grid-row-gap: 30px;
+    /* width: 60%; */
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item .img-item{
+    width: 100%;
+}
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.boton-item a{
+    color: #fff;
+}
+
+.contenedor .contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

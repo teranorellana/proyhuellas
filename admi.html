@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Administrador</title>
+    <link rel="stylesheet" href="css/admi.css">
+    
+    <style>
+        body {
+            background-image: url('img/otrofondo.jpg'); /* Ruta de la imagen */
+            background-size: cover; /* Para cubrir todo el fondo */
+            background-position: center; /* Para centrar la imagen */
+            background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+            /* Otros estilos opcionales para el cuerpo de la página */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="logo-blanco"> 
+        <a href="/">
+        <img src="img/logoblanco.png" id="logo-blanco">
+        </a>
+    </div>
+
+
+    <div class="wrapper">
+        <form action="/register" method="post">
+    <h1>Registro de Administrador</h1>
+    
+
+        <div class="inputbox">
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        </div>
+
+        <div class="inputbox">
+        <label for="username">Nombre de Usuario:</label><br>
+        <input type="text" id="username" name="username"><br>
+        </div>
+
+        <div class="inputbox">
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+        </div>
+
+        <div class="inputbox">
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+    </div>
+
+          <button type="submit" class="boton">Siguiente</button>
+    </form>
+</body>
+</html>

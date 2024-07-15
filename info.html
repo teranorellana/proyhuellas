@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/"><i class='bx bxs-home-heart'></i>Inicio</a>
+        <a href="info.html"><i class='bx bxs-pencil' ></i>Información</a>
+        <a href="ver-mascotas.html"><i class='bx bxs-cat' ></i>Mascotas</a> 
+        <a href="ir-a-tienda.html"><i class='bx bxs-store' ></i>Tienda</a>
+        <a href="contacto.html"><i class='bx bxs-phone' ></i>Contacto</a>
+    </nav>
+
+    <section class="textos-header">
+    <h1>HUELLITAS EMPOLVADAS</h1>
+    <h2>Rescatando corazones, cambiando destinos</h2>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+</header>
+
+<main>
+    <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">¿Quienes somos?</h2>
+        <div class="contenedor-sobre-nosotros">
+            <img src="static/img/imagenaa.png" alt="" class="perrito">
+            <div class="contenido-textos">
+                <p>huellitas empolvadas es... <br>
+                    no se, no me acuerdo lo que escribimos<br>
+                     pero 
+                    tengo que meter una casaca aqui y pues no se que más.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="portafolio">
+        <div class="contenedor">
+            <h2 class="titulo">Ellos necesitan un hogar</h2>
+            <div class="galeria-port">
+                <div class="img-port">
+                    <img src="static/img/mascota 1.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+                <div class="img-port">
+                    <img src="static/img/mascot 2.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/masct 3.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/masct 4.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/masct 5.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/masct 6.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/masct 7.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+
+                <div class="img-port">
+                    <img src="static/img/asct 8.jpeg" alt="">
+                    <div class="hover-galeria">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="nuestros-servicios">
+    <div class="contenedor">
+        <h2 class="titulo">¿Que ofrecemos?</h2>
+        <div class="servicio-cont">
+            <div class="servicio-ind">
+                <img src="static/img/masc.png" alt="">
+                <h3>Mascotas</h3>
+                <p>En esta sección podras encontrar un catálogo con fotos de las mascotas disponibles para adoptar.</p>
+            </div>
+
+            <div class="servicio-ind">
+                <img src="static/img/carrito.png" alt="">
+                <h3>Tienda</h3>
+                <p>En esta sección se mostrarán los productos disponibles para el cuidado de animales.</p>
+            </div>
+
+            <div class="servicio-ind">
+                <img src="static/img/money.png" alt="">
+                <h3>Donaciones</h3>
+                <p>Un apartado especial para que el usuario pueda aportar su ayuda economica o con bienes materiales.</p>
+            </div>
+        
+        </div>
+    </div>
+</section>
+</main>
+</body>
+</html>

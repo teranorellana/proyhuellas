@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/perfiluser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="perfil-usuario">
+        <div class="contenedor-perfil">
+            <div class="portada-perfil" id="portada-perfil" style="background-image: url('http://localhost/multimedia/relleno/fondo-9.png');">
+                <div class="sombra"></div>
+                <div class="avatar-perfil">
+                    <img id="avatar-img" src="http://localhost/multimedia/relleno/img-c9.png" alt="img">
+                    <form id="cambiar-foto-form" class="cambiar-foto" enctype="multipart/form-data" action="perfil.php" method="post">
+                        <label for="file-input-avatar">
+                            <i class="fas fa-camera"></i>
+                            <span>Cambiar foto</span>
+                        </label>
+                        <input id="file-input-avatar" type="file" accept="image/*" style="display: none;">
+                        <input type="hidden" name="avatar" id="avatar-url" value="http://localhost/multimedia/relleno/img-c9.png">
+                        <input type="hidden" name="portada" id="portada-url" value="http://localhost/multimedia/relleno/fondo-9.png">
+                        <input type="hidden" name="nombre_usuario" id="nombre-usuario-hidden" value="Nombre de usuario">
+                        <button type="submit">Guardar Perfil</button>
+                    </form>
+                </div>
+                <div class="datos-perfil">
+                    <h4 class="titulo-usuario" id="nombre-usuario">Nombre de usuario</h4>
+                    <div class="editar-nombre-usuario">
+                        <input type="text" id="nuevo-nombre-usuario" placeholder="Nuevo nombre de usuario" style="display:none;">
+                        <button type="button" id="boton-actualizar-nombre-usuario">
+                            <i class="bx bxs-pencil"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="opciones-perfil">
+                    <input id="file-input-portada" type="file" accept="image/*" style="display: none;">
+                    <label for="file-input-portada" class="boton-cambiar-portada">
+                        <i class="fas fa-camera"></i>  <span>Cambiar foto</span>
+                    </label>
+                    <button type="button"><i class="fas fa-wrench"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/perfiluser.js"></script>
+</body>
+</html>

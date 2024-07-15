@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo-blanco {
+  margin: 10px 0 0 50px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 1em;
+  z-index: 2;
+}
+
+button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block; /* Cambiado a inline-block */
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  margin-right: 10px; /* Espacio entre botones */
+}
+
+button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25, .8, .25, 1);
+  width: 0;
+}
+
+button:hover:before {
+  background-color: #fff;
+  width: 3rem;
+}
+.icon-container {
+  display: inline-block;
+}
+
+
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 200px; /* Espacio entre los iconos y los textos */
+}
+
+.icon-container i {
+  font-size: 6rem; /* Tamaño mediano */
+}
+
+.icon-container span {
+  font-size: 3rem; /* Tamaño de texto */
+  text-align: center; /* Alinear texto al centro */
+}
