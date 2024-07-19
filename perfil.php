@@ -1,5 +1,5 @@
 <?php
-include 'conexion/db_connect.php';
+include 'conexiones/db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nombre_usuario = $_POST['nombre_usuario'];

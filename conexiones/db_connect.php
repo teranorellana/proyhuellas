@@ -1,9 +1,9 @@
 <?php
-// conexion/db_connect.php
+// conexiones/db_connect.php
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "perfilDB";
+$dbname = "huellitas";
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
