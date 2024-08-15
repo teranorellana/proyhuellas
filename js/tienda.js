@@ -32,6 +32,33 @@ function ready() {
     }
 
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked);
+//renderizar el botón de Paypal
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        var total = document.getElementsByClassName('carrito-precio-total')[0].innerText.replace('$', '').replace(',', '');
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: total
+                }
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Pago realizado con éxito por ' + details.payer.name.given_name);
+            // Aquí puedes redirigir al usuario o actualizar la base de datos
+        });
+    },
+    onCancel: function (data) {
+        alert('Pago cancelado');
+    },
+    onError: function (err) {
+        console.error('Error durante el pago', err);
+        alert('Ocurrió un error durante el pago. Inténtelo de nuevo.');
+    }
+}).render('#paypal-button-container');
+
 }
 
 function pagarClicked() {
@@ -159,3 +186,6 @@ function actualizarTotalCarrito() {
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toLocaleString("es") + ",00";
 }
+
+
+
