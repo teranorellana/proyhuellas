@@ -35,7 +35,8 @@ function ready() {
 //renderizar el botón de Paypal
 paypal.Buttons({
     createOrder: function(data, actions) {
-        var total = document.getElementsByClassName('carrito-precio-total')[0].innerText.replace('$', '').replace(',', '');
+        var total = parseFloat(document.getElementsByClassName('carrito-precio-total')[0].innerText.replace('$', '').replace('.', '').replace(',', '.'));
+        total = total.toFixed(2); // Asegúrate de que sea un número con dos decimales en el formato correcto
         return actions.order.create({
             purchase_units: [{
                 amount: {
@@ -183,8 +184,12 @@ function actualizarTotalCarrito() {
         var cantidad = parseInt(cantidadItem.value);
         total += precio * cantidad;
     }
+    // Corregido: Redondea el total a dos decimales sin dividir por 100
     total = Math.round(total * 100) / 100;
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toLocaleString("es") + ",00";
+   
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toLocaleString("es", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+ // document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toLocaleString("es") + ",00";
 }
 
 
